@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+MapleStory Experience Calculator
+A simple yet powerful calculator for MapleStory private servers that helps players track and plan their leveling progression. This tool allows you to accurately estimate the time needed to reach target levels based on your current experience gains.
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Calculate leveling time based on your exp/hour or exp/minute
+Input your current level and experience percentage
+View detailed progression estimates for each level
+Accurate calculations using complete exp tables (levels 1-299)
+Clean, easy-to-use interface
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/de9f23b9-2e5a-4cde-b21e-3ca0f71de9d3)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How to Use
 
-## Expanding the ESLint configuration
+Enter your current level
+Input your current experience percentage
+Add your experience gain rate (per hour or minute)
+View detailed estimates for reaching each subsequent level
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Technical Details
 
-- Configure the top-level `parserOptions` property like this:
+Built with React + TypeScript
+Uses Vite for fast development and building
+Includes comprehensive MapleStory experience tables
+Modular component structure for easy maintenance
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Development
+# Install dependencies
+npm install
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+# Run development server
+npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Build for production
+npm run build
+Contributing
+YunaMS 
+https://www.yuna-db.net/exp-table 
